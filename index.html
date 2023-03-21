@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <h1>This will be a Javascript Powered Calculator</h1>
+
+   <script>
+    
+    function Add(x,y) {
+      let answer = x + y;
+         return answer;
+    }
+
+    function Subtract(x,y) {
+      let answer = x - y;
+         return answer;
+    }
+
+    function Multiply(x,y) {
+      let answer = x * y;
+         return answer;
+    }
+
+    function Divide(x,y) {
+      let answer = x / y;
+         return answer;
+    }
+   
+   console.log(Add(12,3)); //15
+   console.log(Subtract(12,3)); //9
+   console.log(Divide(12,3)); //4
+   console.log(Multiply(12,3)); //36
+
+    function getInput1Value() {
+      var inputVal = document.getElementById('firstInput').value;
+      console.log(inputVal);
+    } 
+
+    function getInput2Value() {
+      var inputVal2 = document.getElementById('secondInput').value;
+      console.log(inputVal2);
+    } 
+   </script>
+
+   <br>
+   <input type="text" placeholder="Insert a number" id="firstInput"></input>
+   <button type="button" onclick="getInput1Value();">Submit</button>
+   <br>
+   <br>
+   <input type="text"></input>
+   <br>
+   <br>
+   <input type="text" placeholder="Insert a number" id="secondInput"></input>
+   <button type="button" onclick="getInput2Value();">Submit</button>
+   <p id="equalsign">=</p>
+   <p id="answer"></p>
+
+
+   <br>
+   <br>
+   <p id="add"></p>
+   <p id="subtract"></p>
+   <p id="multiply"></p>
+   <p id="divide"></p>
+
+
+<!-- 
+   <button type="button" onclick="document.getElementById('number1').innerHTML = `${number1}`">1</button>
+   <button type="button" onclick="document.getElementById('number2').innerHTML = `${number2}`">2</button>
+   <button type="button" onclick="document.getElementById('number3').innerHTML = `${number3}`">3</button>
+   <button type="button" onclick="document.getElementById('number4').innerHTML = `${number4}`">4</button>
+   <button type="button" onclick="document.getElementById('number5').innerHTML = `${number5}`">5</button>
+   <button type="button" onclick="document.getElementById('number6').innerHTML = `${number6}`">6</button>
+   <button type="button" onclick="document.getElementById('number7').innerHTML = `${number7}`">7</button>
+   <button type="button" onclick="document.getElementById('number8').innerHTML = `${number8}`">8</button>
+   <button type="button" onclick="document.getElementById('number9').innerHTML = `${number9}`">9</button>
+   <button type="button" onclick="document.getElementById('number10').innerHTML = `${number10}`">10</button> -->
+
+   
+<!-- <p id="number1"></p>
+   <p id="number2"></p>
+   <p id="number3"></p>
+   <p id="number4"></p>
+   <p id="number5"></p>
+   <p id="number6"></p>
+   <p id="number7"></p>
+   <p id="number8"></p>
+   <p id="number9"></p>
+   <p id="number10"></p> -->
+
+<!-- <script>
+    let number1 = 1;
+    let number2 = 2;
+    let number3 = 3;
+    let number4 = 4;
+    let number5 = 5;
+    let number6 = 6;
+    let number7 = 7;
+    let number8 = 8;
+    let number9 = 9;
+    let number10 = 10;
+    let inputFieldValue = 0;
+   </script> -->
+</html>
