@@ -4,35 +4,35 @@
 
    <script>
     
-    function Add(x,y) {
-      let answer = x + y;
-         return answer;
-    }
+   //  function Add(x,y) {
+   //    let answer = x + y;
+   //       return answer;
+   //  }
 
-    function Subtract(x,y) {
-      let answer = x - y;
-         return answer;
-    }
+   //  function Subtract(x,y) {
+   //    let answer = x - y;
+   //       return answer;
+   //  }
 
-    function Multiply(x,y) {
-      let answer = x * y;
-         return answer;
-    }
+   //  function Multiply(x,y) {
+   //    let answer = x * y;
+   //       return answer;
+   //  }
 
-    function Divide(x,y) {
-      let answer = x / y;
-         return answer;
-    }
-    
+   //  function Divide(x,y) {
+   //    let answer = x / y;
+   //       return answer;
+   //  }
    
-   console.log(Add(12,3)); //15
-   console.log(Subtract(12,3)); //9
-   console.log(Divide(12,3)); //4
-   console.log(Multiply(12,3)); //36
+   // console.log(Adder(12,3)); //15
+   // console.log(Subtract(12,3)); //9
+   // console.log(Divide(12,3)); //4
+   // console.log(Multiply(12,3)); //36
 
     function getInput1Value() {
       var inputVal = document.getElementById('firstInput').value;
       console.log(inputVal);
+      
     } 
 
     function getInput2Value() {
@@ -40,25 +40,51 @@
       console.log(inputVal2);
     } 
 
+    function Add() {
+      let answer = +document.getElementById('firstInput').value + +document.getElementById('secondInput').value;
+        return document.getElementById('answer').innerHTML = answer;
+    }
+
+    function Subtract() {
+      let answer = +document.getElementById('firstInput').value - +document.getElementById('secondInput').value;
+         return document.getElementById('answer').innerHTML = answer;
+    }
+
+    function Multiply() {
+      let answer = +document.getElementById('firstInput').value * +document.getElementById('secondInput').value;
+         return document.getElementById('answer').innerHTML = answer;
+    }
+
+    function Divide() {
+      let answer = +document.getElementById('firstInput').value / +document.getElementById('secondInput').value;
+         return document.getElementById('answer').innerHTML = answer;
+    }
     
+    
+
    </script>
 
    <br>
    <input type="text" placeholder="Insert a number" id="firstInput"></input>
-   <button type="button" onclick="getInput1Value();">Submit</button>
+   <!-- <button type="button" onclick="getInput1Value();">Submit</button> -->
    <br>
    <br>
-   <button type="text" onclick="Add('inputVal','inputVal2');">+</button>
+      <button type="button" onclick="Add();">+</button>
+      <button type="button" onclick="Subtract();">-</button>
+      <button type="button" onclick="Multiply();">*</button>
+      <button type="button" onclick="Divide();">/</button>
    <br>
    <br>
    <input type="text" placeholder="Insert a number" id="secondInput"></input>
-   <button type="button" onclick="getInput2Value();">Submit</button>
+   <!-- <button type="button" onclick="getInput2Value();">Submit</button> -->
    <p id="equalsign">=</p>
+   <div id="answer"></div>
    <p id="answer"></p>
 
 
    <br>
    <br>
+   <p id="inputVal"></p>
    <p id="add"></p>
    <p id="subtract"></p>
    <p id="multiply"></p>
